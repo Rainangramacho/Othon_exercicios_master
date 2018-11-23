@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Menu</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../css/admmenu.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h2 class="color-text">Bem vindo, administrador!</h2>
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#home">Início</a></li>
+                
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" id="idproduto" href="#">
+                        Produtos <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="cadastroProduto/cadastroProduto.php">Cadastrar novo produto</a></li>
+                        <li><a href="#">Editar produto</a></li>
+                        <li><a href="#">Ver produtos</a></li>
+                        <li><a href="#">Excluir produto</a></li>
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" id="idoperador" href="#">
+                        Operadores de caixa <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="cadastroOperador/cadastroOperador.php">Cadastrar operador</a></li>
+                        <li><a href="#">Editar operador</a></li>
+                        <li><a href="#">Ver operadores</a></li>
+                        <li><a href="#">Excluir operador</a></li>
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" id="idcliente" href="#">
+                        Clientes <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="cadastroCliente/cadastroCliente.php">Cadastrar cliente</a></li>
+                        <li><a href="#">Editar cliente</a></li>
+                        <li><a href="#">Ver clientes</a></li>
+                        <li><a href="#">Excluir cliente</a></li>
+                    </ul>
+                </li>
+            </ul>
+                
+            <div class="tab-content">
+                <div id="inicio" class="tab-pane fade in active">
+                    <div class="centraliza">
+                            <h3 class="color-text">Mercadinho da Esquina</h3>
+                            <img src="../../imgs/logo.png" class="rounded-circle" alt="Logo" width="20%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
